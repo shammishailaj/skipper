@@ -9,7 +9,8 @@ There are multiple ways of getting involved:
 - [Contribute code](#contribute-code)
 
 Below are a few guidelines we would like you to follow.
-If you need help, please reach out to us: team-pathfinder@zalando.de
+If you need help, please reach out to us: [community channels](https://github.com/zalando/skipper#community)
+
 
 ## Report a bug
 Reporting bugs is one of the best ways to contribute. Before creating a bug report, please check that an [issue](https://github.com/zalando/skipper/issues) reporting the same problem does not already exist. If there is an such an issue, you may add your information as a comment.
@@ -43,3 +44,8 @@ Your commit messages ideally can answer two questions: what changed and why. The
 When creating a pull request, its comment should reference the corresponding issue id.
 
 **Have fun and enjoy hacking!**
+
+## Governance - final decisions
+
+The project owner and lead makes all final decisions, if there is a
+disagreement between contributors and maintainers.
