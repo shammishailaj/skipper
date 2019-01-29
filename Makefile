@@ -100,6 +100,9 @@ vet: $(SOURCES)
 staticcheck: $(SOURCES)
 	GO111MODULE=on staticcheck -checks "all,-ST1000,-ST1003,-ST1012" $(PACKAGES)
 
+gosec: $(SOURCES)
+	GO111MODULE=on gosec -quiet -exclude="G101,G104,G304" $(PACKAGES) 2>/dev/null
+
 fmt: $(SOURCES)
 	@gofmt -w -s $(SOURCES)
 

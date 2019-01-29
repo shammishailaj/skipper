@@ -117,7 +117,10 @@ func New(o Options) (*Client, error) {
 		prependFilters: preFilters,
 		appendFilters:  postFilters,
 		httpClient: &http.Client{Transport: &http.Transport{
-			TLSClientConfig:   &tls.Config{InsecureSkipVerify: o.Insecure},
+			TLSClientConfig: &tls.Config{
+				InsecureSkipVerify: o.Insecure, /* nosec */
+			},
+
 			DisableKeepAlives: true}}}, nil
 }
 

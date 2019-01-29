@@ -145,7 +145,9 @@ func New(o Options) (*Client, error) {
 				Timeout:   30 * time.Second,
 				KeepAlive: 30 * time.Second}).Dial,
 			TLSHandshakeTimeout: 10 * time.Second,
-			TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
+			TLSClientConfig: &tls.Config{
+				InsecureSkipVerify: true, /* nosec */
+			},
 		}
 	}
 
